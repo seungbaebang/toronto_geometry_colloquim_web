@@ -900,3 +900,8 @@ nav {
     display: none;
   }
 }
+
+.note
+{
+  background-color: #FF0;
+}
