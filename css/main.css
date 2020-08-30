@@ -388,7 +388,7 @@ nav {
   position: relative;
   min-height: 180px;
   padding-left: 180px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   border-bottom: 1px dashed #e7e7e7;
 }
 .speaker-photo {
@@ -404,6 +404,12 @@ nav {
   font-size: 2em;
   margin-bottom: 1em;
 }
+.opener-speech-title {
+  padding-top: 10px;
+  padding-left: 150px;
+  font-size: 1.8em;
+  margin-bottom: 0.6em;
+}
 .speech-time {
   font-size: 18px;
   padding: 10px 15px;
@@ -414,6 +420,37 @@ nav {
 }
 .speakers-item p {
   font-size: 1.4em;
+}
+.opener-name {
+    padding-left: 150px;
+  font-size: 1.6em;
+}
+.opener-item p {
+  font-size: 1.4em;
+}
+.opener-item {
+  position: relative;
+  min-height: 180px;
+  padding-left: 320px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #e7e7e7;
+}
+.opener-photo {
+  position: absolute;
+  top: 120px;
+  left: 220px;
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+.opener-title {
+  padding-top: 10px;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+.opener-bio {
+  padding-left: 150px;
+  margin-bottom: 1.8em;
 }
 /* =============================================================================
    SCHEDULE
@@ -550,6 +587,11 @@ nav {
     height: 40px;
     margin-right: 5px;
   }
+  .schedule-tbl .opener-photo {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
   .schedule-tbl .schedule-slot {
     width: 120px;
   }
@@ -652,6 +694,27 @@ nav {
     padding: 0;
   }
   .speakers-bio {
+    display: none;
+  }
+  .opener-item {
+    min-height: 70px;
+    padding-left: 70px;
+  }
+  .opener-photo {
+    width: 50px;
+    height: 50px;
+  }
+  .opener-title {
+    padding-top: 0;
+    font-size: 16px;
+    margin-bottom: .3em;
+  }
+  .opener-time {
+    font-size: 16px;
+    padding: 0;
+  }
+  .opener-bio {
+      padding-left: 350px;
     display: none;
   }
 }
@@ -795,7 +858,19 @@ nav {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+.opener-photo .photo {
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
 .speakers-item:hover .speaker-photo .photo {
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.opener-item:hover .speaker-photo .photo {
   box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.3);
 }
 .speech-time {
@@ -826,6 +901,9 @@ nav {
   color: #2b2b2b;
 }
 .schedule-tbl .speaker-photo .photo {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.schedule-tbl .opener-photo .photo {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
 }
 .speakers-company {
@@ -886,6 +964,9 @@ nav {
 @media only screen and (max-width: 480px) {
   /* speakers */
   .speaker-photo .photo {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07);
+  }
+  .opener-photo .photo {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07);
   }
   .speech-title {
